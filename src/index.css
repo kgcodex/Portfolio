@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@utility no-scrollbar {
+	/* For Firefox */
+	scrollbar-width: none;
+
+	/* For Chrome, Safari, and Opera */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+html,
+body {
+	@apply no-scrollbar;
+	overflow-x: hidden;
+}
+
+body {
+	@apply bg-black text-white font-mono text-sm md:text-lg px-4 md:px-8 pt-4 md:pt-8;
+}
+
+@font-face {
+	font-family: "Archivo";
+	src: url("./assets/fonts/ArchivoBlack-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "MoonDance";
+	src: url("./assets/fonts/MoonDance-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-archivo: "Archivo";
+	--font-moondance: "MoonDance";
+}
