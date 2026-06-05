@@ -23,7 +23,7 @@ const Navbar = () => {
 			</a>
 
 			{/* Desktop Menu */}
-			<div className="hidden md:flex items-center justify-center gap-2 md:gap-8 bg-neutral-800/60 rounded-full p-2">
+			<div className="hidden items-center justify-center gap-2 rounded-full bg-neutral-800/60 p-2 md:flex md:gap-8">
 				{navLinks.map((link) => {
 					const Icon = link.icon;
 
@@ -31,9 +31,9 @@ const Navbar = () => {
 						<a
 							key={link.href}
 							href={link.href}
-							className="flex items-center gap-2 py-2 px-4 group hover:bg-black rounded-full whitespace-nowrap transition-all duration-300"
+							className="group flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2 transition-all duration-300 hover:bg-black"
 						>
-							<Icon className="opacity-0 w-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 group-hover:w-4 transition-all duration-500 ease-out" />
+							<Icon className="w-0 translate-x-4 opacity-0 transition-all duration-500 ease-out group-hover:w-4 group-hover:translate-x-0 group-hover:opacity-100" />
 
 							<span>{link.label}</span>
 						</a>
@@ -46,17 +46,17 @@ const Navbar = () => {
 				type="button"
 				onClick={toggleMenu}
 				aria-label="Toggle Menu"
-				className="md:hidden p-2 text-neutral-400 hover:text-white hover:bg-neutral-900/60 rounded-full transition-all duration-200 focus:outline-none"
+				className="rounded-full p-2 text-neutral-400 transition-all duration-200 hover:bg-neutral-900/60 hover:text-white focus:outline-none md:hidden"
 			>
 				{isOpen ? <X size={24} /> : <Menu size={24} />}
 			</button>
 
 			{/* Mobile Dropdown */}
 			<div
-				className={`absolute top-full left-0 z-50 mt-4 w-full md:hidden transition-all duration-300 ease-in-out ${
+				className={`absolute top-full left-0 z-50 mt-4 w-full transition-all duration-300 ease-in-out md:hidden ${
 					isOpen
-						? "opacity-100 translate-y-0 pointer-events-auto"
-						: "opacity-0 -translate-y-2 pointer-events-none"
+						? "pointer-events-auto translate-y-0 opacity-100"
+						: "pointer-events-none -translate-y-2 opacity-0"
 				}`}
 			>
 				<div className="flex flex-col gap-3 rounded-2xl border border-neutral-900 bg-black p-4 shadow-2xl">
@@ -72,7 +72,7 @@ const Navbar = () => {
 							>
 								<Icon size={20} className="text-neutral-400" />
 
-								<span className="font-mono text-base font-medium">
+								<span className="font-medium font-mono text-base">
 									{link.label}
 								</span>
 							</a>

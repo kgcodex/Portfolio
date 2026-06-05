@@ -26,6 +26,15 @@
 			"suspicious": {
 				"noExplicitAny": "warn",
 				"noVar": "error"
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw", "tw.*"]
+					},
+					"level": "on"
+				}
 			}
 		}
 	},
@@ -59,7 +68,8 @@
 						]
 					},
 					"level": "on"
-				}
+				},
+				"recommended": true
 			}
 		}
 	}
