@@ -2,7 +2,7 @@ import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ChevronRight } from "lucide-react";
 
-import pic from "@/assets/images/pic.png";
+import pic from "@/assets/images/pic.webp";
 import DotMatrix from "@/components/DotMatrix";
 import Navbar from "@/components/Navbar";
 import VerticalTrack from "@/components/VerticalTrack";
@@ -18,7 +18,7 @@ const App = () => {
 		<>
 			<Navbar />
 			<VerticalTrack />
-			<main className="relative ml-8 flex h-[100dvh] flex-col justify-start overflow-hidden max-md:pt-16 md:ml-20 md:justify-center">
+			<main className="relative ml-8 flex h-dvh flex-col justify-start overflow-hidden max-md:pt-16 md:ml-20 md:justify-center">
 				{!isMobile && (
 					<img
 						src={pic}
@@ -30,7 +30,7 @@ const App = () => {
 					<img
 						src={pic}
 						alt="Pic"
-						className="absolute bottom-14 left-1/2 -ml-6 h-auto w-[100dvw] -translate-x-1/2"
+						className="absolute bottom-14 left-1/2 -ml-6 h-auto w-dvw -translate-x-1/2"
 					/>
 				)}
 				<p className="font-archivo text-6xl lg:text-9xl">

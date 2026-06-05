@@ -76,6 +76,8 @@ const ProjectCard = ({
 								? liveLink
 								: `https://github.com/kgcodex/${githubRepoName}`
 						}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="group flex items-center gap-2 whitespace-nowrap rounded-full bg-black px-4 py-2"
 					>
 						View Project
@@ -83,6 +85,8 @@ const ProjectCard = ({
 					</a>
 					<a
 						href={`https://github.com/kgcodex/${githubRepoName}`}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="group flex items-center gap-2 whitespace-nowrap rounded-full bg-black px-4 py-2"
 					>
 						<FontAwesomeIcon icon={faGithub} className="w-4" />
@@ -98,6 +102,7 @@ const ProjectCard = ({
 						<iframe
 							src={liveLink}
 							title={title}
+							loading="lazy"
 							className="h-full w-full rounded-2xl max-md:h-75"
 						></iframe>
 					)}
@@ -105,7 +110,8 @@ const ProjectCard = ({
 						<img
 							src={`https://raw.githubusercontent.com/kgcodex/${githubRepoName}/main/Preview.gif`}
 							alt={`${title} preview`}
-							className="h-full w-full rounded-2xl"
+							loading="lazy"
+							className="h-auto w-full rounded-2xl"
 						/>
 					)}
 

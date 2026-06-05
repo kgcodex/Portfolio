@@ -18,6 +18,8 @@ const Navbar = () => {
 			<a
 				href="https://github.com/kgcodex"
 				className="font-archivo text-2xl md:text-3xl"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				kg_codex
 			</a>

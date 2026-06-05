@@ -22,7 +22,7 @@ body {
 
 @font-face {
 	font-family: "Archivo";
-	src: url("./assets/fonts/ArchivoBlack-Regular.ttf");
+	src: url("./assets/fonts/ArchivoBlack-Regular.woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -30,7 +30,7 @@ body {
 
 @font-face {
 	font-family: "MoonDance";
-	src: url("./assets/fonts/MoonDance-Regular.ttf");
+	src: url("./assets/fonts/MoonDance-Regular.woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
