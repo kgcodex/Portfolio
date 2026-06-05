@@ -13,7 +13,7 @@ const Navbar = () => {
 	const toggleMenu = () => setIsOpen(!isOpen);
 
 	return (
-		<nav className="relative flex items-center justify-between">
+		<nav className="relative flex items-center justify-between max-md:px-2">
 			{/* Logo */}
 			<a
 				href="https://github.com/kgcodex"

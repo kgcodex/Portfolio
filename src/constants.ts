@@ -1,3 +1,7 @@
+import { FileUser } from "lucide-react";
+
+import { Gmail, LinkedIn, XformerlyTwitter } from "@/components/Icons";
+
 export const technologies = {
 	// Languages
 	Python: "python/3776AB",
@@ -16,7 +20,7 @@ export const technologies = {
 	// UI
 	CSS: "css/663399",
 	Tailwind: "tailwindcss/06B6D4",
-	"shadcn/ui": "shadcnui/000000",
+	"shadcn/ui": "shadcnui/FFFFFF",
 	daisyUI: "daisyui/FFC63A",
 
 	// JS Backend
@@ -44,7 +48,7 @@ export const technologies = {
 	Gemini: "googlegemini/8E75B2",
 
 	// Markdown
-	Markdown: "markdown/000000",
+	Markdown: "markdown/FFFFFF",
 
 	// Open Source
 	"Open Source": "opensourceinitiative/0099B0",
@@ -57,5 +61,25 @@ export const technologies = {
 	uv: "uv/DE5FE9",
 
 	// Auth
-	JWT: "jsonwebtokens/000000",
+	JWT: "jsonwebtokens/FFFFFF",
 };
+
+export const socialLinks = [
+	{
+		platform: "LinkedIn",
+		link: "https://linkedin.com/in/kunalgoel101",
+		icon: LinkedIn,
+	},
+	{ platform: "X", link: "", icon: XformerlyTwitter },
+	{
+		platform: "Gmail",
+		link: "https://mail.google.com/mail/?view=cm&fs=1&to=1325kunalgoel@gmail.com",
+		icon: Gmail,
+	},
+	{ platform: "Medium", link: "", icon: "" },
+	{
+		platform: "Resume",
+		link: "https://drive.google.com/file/d/1Ku3CNu9yTA8y9CR7sIPSKRN9NOXGMA_i/view?usp=drive_link",
+		icon: FileUser,
+	},
+];

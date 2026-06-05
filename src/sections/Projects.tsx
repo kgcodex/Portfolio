@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
 	return (
-		<section id="projects" className="mx-4 mt-20h md:mx-20">
+		<section id="projects" className="mx-4 mt-20 md:mx-20">
 			<h1 className="mb-8 text-4xl md:text-6xl">Projects</h1>
 			<ProjectCard
 				serialNo="01"
