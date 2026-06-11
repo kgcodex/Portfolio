@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const OpenSource = () => {
 	return (
-		<section id="opensource" className="mx-4 mt-20 h-[60dvh] md:mx-20">
+		<section id="opensource" className="mx-4 mt-20 md:mx-20">
 			<h1 className="mb-8 text-4xl md:text-6xl">Open Source</h1>
 			<ProjectCard
 				serialNo="01"

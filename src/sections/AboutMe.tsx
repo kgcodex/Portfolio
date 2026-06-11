@@ -17,7 +17,7 @@ const certificates = [
 
 const AboutMe = () => {
 	return (
-		<section id="aboutme" className="mx-4 mt-10 rounded-2xl md:mx-20">
+		<section id="aboutme" className="mx-4 mt-20 rounded-2xl md:mx-20">
 			<h1 className="text-4xl md:mb-8 md:text-6xl">About Me</h1>
 			<div className="flex flex-col items-start justify-center gap-8 md:flex-row md:gap-20">
 				<div className="md:w-1/2">

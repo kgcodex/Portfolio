@@ -1,5 +1,3 @@
-import { FileUser } from "lucide-react";
-
 import { Gmail, LinkedIn, XformerlyTwitter } from "@/components/Icons";
 
 export const technologies = {
@@ -40,7 +38,7 @@ export const technologies = {
 	PostgreSQL: "postgresql/4169E1",
 
 	// Realtime
-	WebRTC: "webrtc/333333",
+	WebRTC: "webrtc/FFFFFF",
 	"Socket.io": "socketdotio/ffffff",
 
 	// AI
@@ -56,7 +54,7 @@ export const technologies = {
 
 	// Tools
 	Git: "git/F03C2E",
-	GitHub: "github/181717",
+	GitHub: "github/FFFFFF",
 	Vite: "vite/9135FF",
 	uv: "uv/DE5FE9",
 
@@ -70,16 +68,11 @@ export const socialLinks = [
 		link: "https://linkedin.com/in/kunalgoel101",
 		icon: LinkedIn,
 	},
-	{ platform: "X", link: "", icon: XformerlyTwitter },
+	{ platform: "X", link: "https://x.com/kgcodex", icon: XformerlyTwitter },
 	{
 		platform: "Gmail",
 		link: "https://mail.google.com/mail/?view=cm&fs=1&to=1325kunalgoel@gmail.com",
 		icon: Gmail,
 	},
-	{ platform: "Medium", link: "", icon: "" },
-	{
-		platform: "Resume",
-		link: "https://drive.google.com/file/d/1Ku3CNu9yTA8y9CR7sIPSKRN9NOXGMA_i/view?usp=drive_link",
-		icon: FileUser,
-	},
+	{ platform: "Medium", link: "https://medium.com/@hexcodex101", icon: "" },
 ];

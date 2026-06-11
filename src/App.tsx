@@ -9,8 +9,11 @@ import VerticalTrack from "@/components/VerticalTrack";
 import { socialLinks } from "@/constants";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import AboutMe from "@/sections/AboutMe";
+import ContactMe from "@/sections/ContactMe";
+import Footer from "@/sections/Footer";
 import OpenSource from "@/sections/OpenSource";
 import Projects from "@/sections/Projects";
+import Skills from "@/sections/Skills";
 
 const App = () => {
 	const isMobile = useIsMobile();
@@ -48,7 +51,7 @@ const App = () => {
 						<p className="text-xl">• PYTHON DEVELOPER</p>
 					</>
 				)}
-				<div className="mt-8 ml-4 flex gap-4">
+				<div className="mt-8 ml-4 flex items-center gap-4">
 					{socialLinks.map((social) => {
 						const Icon = social.icon;
 
@@ -69,6 +72,15 @@ const App = () => {
 							</a>
 						);
 					})}
+					<a
+						title="See My Resume"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://drive.google.com/file/d/1Ku3CNu9yTA8y9CR7sIPSKRN9NOXGMA_i/view?usp=drive_link"
+						className="flex rounded-2xl bg-blue-600 p-2 font-semibold text-black transition-all duration-200 ease-in-out hover:scale-110"
+					>
+						View Resume
+					</a>
 				</div>
 				{!isMobile && (
 					<div className="group mt-60 flex w-fit items-center gap-4 rounded-full p-4 text-4xl transition-colors duration-300 hover:bg-neutral-800/60">
@@ -79,9 +91,12 @@ const App = () => {
 				)}
 			</main>
 
+			<Skills />
 			<AboutMe />
 			<Projects />
 			<OpenSource />
+			<ContactMe />
+			<Footer />
 		</>
 	);
 };
