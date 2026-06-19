@@ -1,3 +1,4 @@
+import candidly_demo from "@/assets/videos/candidly_demo.mp4";
 import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
@@ -24,7 +25,7 @@ const Projects = () => {
 					"Native WebRTC",
 					"P2P Media Streaming",
 					"Real-time Chat",
-					"Screen Sharing",
+					"Session Token based Auth",
 				]}
 			/>
 
@@ -44,7 +45,7 @@ to help candidates prepare for real-world hiring processes."
 					"Pydantic",
 				]}
 				githubRepoName="Candidly"
-				liveLink="https://candidly-chi.vercel.app"
+				localPreviewSrc={candidly_demo}
 				highlights={[
 					"Resume-Based Evaluation",
 					"Voice Activity Detection",
@@ -69,7 +70,6 @@ engagement built with React, TypeScript, and Django REST Framework."
 					"React Query",
 				]}
 				githubRepoName="Connect"
-				liveLink={null}
 				highlights={[
 					"Django REST APIs",
 					"JWT Authentication",

@@ -74,5 +74,9 @@ export const socialLinks = [
 		link: "https://mail.google.com/mail/?view=cm&fs=1&to=1325kunalgoel@gmail.com",
 		icon: Gmail,
 	},
-	{ platform: "Medium", link: "https://medium.com/@hexcodex101", icon: "" },
+	{
+		platform: "Medium",
+		link: "https://medium.com/@hexcodex101",
+		icon: "",
+	},
 ];

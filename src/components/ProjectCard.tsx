@@ -14,7 +14,8 @@ export type ProjectCardProps = {
 	desc: string;
 	techStack: TechKey[];
 	githubRepoName: string;
-	liveLink: string | null;
+	liveLink?: string;
+	localPreviewSrc?: string;
 	highlights: string[];
 };
 
@@ -25,7 +26,9 @@ const ProjectCard = ({
 	desc,
 	techStack,
 	githubRepoName,
+	localPreviewSrc,
 	liveLink,
+
 	highlights,
 }: ProjectCardProps) => {
 	const duptechStack = [...techStack, ...techStack, ...techStack];
@@ -97,7 +100,7 @@ const ProjectCard = ({
 			<div className="w-0.5 self-stretch bg-neutral-800" />
 			{/* Right  */}
 			<div className="flex flex-col md:my-8 md:w-[45%]">
-				<div className="group relative flex-1">
+				<div className="group relative aspect-video flex-1 overflow-hidden">
 					{liveLink && (
 						<iframe
 							src={liveLink}
@@ -106,13 +109,23 @@ const ProjectCard = ({
 							className="h-full w-full rounded-2xl max-md:h-75"
 						></iframe>
 					)}
-					{!liveLink && (
+					{!liveLink && !localPreviewSrc && (
 						<img
 							src={`https://raw.githubusercontent.com/kgcodex/${githubRepoName}/main/Preview.gif`}
 							alt={`${title} preview`}
 							loading="lazy"
-							className="h-auto w-full rounded-2xl"
+							className="absolute inset-0 h-full w-full rounded-2xl object-cover"
 						/>
+					)}
+					{localPreviewSrc && (
+						<video
+							autoPlay
+							muted
+							loop
+							playsInline
+							src={localPreviewSrc}
+							className="absolute inset-0 h-full w-full rounded-2xl object-cover"
+						></video>
 					)}
 
 					<a
